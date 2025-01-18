@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
-
+                startIntent.putExtra("fi.voicehaus.firstapp.SOMETHING", "HELLO WORLD!");
                 startActivity(startIntent);
             }
         });
